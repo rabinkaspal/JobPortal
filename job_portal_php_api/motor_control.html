@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <style>
+        body{background-color: azure; margin: 0; padding: 5px; }
+        table{ width:auto; height:auto; margin:25px auto;}
+        table tr{margin:0; padding:0;}
+        table tr th{margin:0; padding: 0; width: 100px; height: 80px;}
+        button{border-radius: 60px; border:1px inset outset #ccc; color:forestgreen;}
+        .myButton {
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+          background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+          background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+          background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+          background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+          background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+          background-color:#7892c2;
+          -moz-border-radius:42px;
+          -webkit-border-radius:42px;
+          border-radius:41px;
+          border:2px solid #4e6096;
+          display:inline-block;
+          cursor:pointer;
+          color:#f7f71e;
+          font-family:Georgia;
+          font-size:15px;
+          font-weight:bold;
+          padding:25px 8px;
+          text-decoration:none;
+          text-shadow:3px 1px 2px #283966;
+      }
+      .myButton:active {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+          background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+          background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+          background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+          background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+          background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+          background-color:#476e9e;
+          position:relative;
+          top:1px;
+      }       </style>
+ 
+      <script type="text/javascript">
+            function AndroidExit(){
+                  Android.Exit();
+            }
+        </script>
+      </head>
+  <body topmargin=0 leftmargin=0>
+        <div style="text-style:bold; color:red; padding:5px 8px;background:#fc0; border-radius:10px; position:absolute;right:2px;top:2px;"  onclick="AndroidExit()">X</div>
+	<table border="0" cellpadding:0 cellspacing=0>
+          <form name="form">
+		
+		<tr>
+			<th>&nbsp;</th>
+      <th style="vertical-align:bottom; height:100%;"><button name="d"  type="submit" value="01" style="width:100px;" class="myButton">UP</button></th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+			
+		</tr>
+		<tr>
+      <th style="height:100%;"><button name="d"  type="submit" value="02" style="width:100px;" class="myButton">LEFT</button></th>
+			<th>&nbsp;</th>
+      <th><button name="d"  type="submit" value="03"  style="width:100px;" class="myButton">RIGHT</button></th>
+			<th>&nbsp;</th>
+			<th><button type="submit" name="d" value="05"  style="width:100px;" class="myButton">STOP</button></th>
+			
+		</tr>
+		<tr>
+			<th>&nbsp;</th>
+      <th  style="height:100%; vertical-align:top;"><button type="submit" name="d" value="04"  style="width:100px;" class="myButton">DOWN</button></th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+			
+		</tr>
+		
+		</form>
+	  </table>
+	
+  </body>
+</html>

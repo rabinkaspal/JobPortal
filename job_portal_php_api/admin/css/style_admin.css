@@ -1,0 +1,63 @@
+.formError{
+margin:0px;
+	padding: 0px;
+	color: crimson;
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.glyphicon-ok, .glyphicon-remove{
+	  position:absolute;
+	  top:4px;
+	  right:15px;
+	
+}
+
+ body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+.form-register{
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin {
+ max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-register .form-signin-heading{
+  margin-bottom: 10px;
+}
+
+.form-signin .form-control,.form-register .form-control  {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+    margin-bottom: 10px;
+}
+.navbar-right{
+padding-right: 15px;}
+
+.success{
+	margin: 10px 0;
+	border: 1px solid forestgreen;
+	border-radius: 5px;
+	padding: 5px 5px 5px 20px;
+	color: forestgreen;
+}
+
+.failure{
+	margin: 10px 0;
+	border: 1px solid firebrick;
+	border-radius: 5px;
+	padding: 5px 5px 5px 20px;
+	color: firebrick;
+}
