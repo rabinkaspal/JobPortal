@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#6699FF"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:shadowColor="#909090"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5.0"
+            android:text="Company Details"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+
+            <!-- container ll -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#6699FF"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="8dp"
+                        android:shadowColor="#909090"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="5.0"
+                        android:text="General Information"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/company_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Company Name"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Address"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="#ccc" />
+
+                        <!-- table type layout -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Industry"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/industry"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="8"
+                                    android:text="Banking/Management/Finances" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Ownership"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/ownership"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="8"
+                                    android:text="Private" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="No. of employees"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/numEmployees"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="8"
+                                    android:text="450" />
+                            </LinearLayout>
+                            <!-- end of table type layout -->
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/url"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="http://www.newemployer.com" />
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Contact: 9841687340" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="mail@newemployer.com"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <!-- more data below -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#6699FF"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="8dp"
+                        android:shadowColor="#909090"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="5.0"
+                        android:text="Company Description"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/company_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \n\nNam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa.
+
+\n\nInteger ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. \n\nIn dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+
+Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. \n\n\nCras ipsum. Vestibulum pretium, lectus nec venenatis volutpat, purus lectus ultrices risus, a condimentum risus mi et quam. Pellentesque auctor fringilla neque. Duis eu massa ut lorem iaculis vestibulum. Maecenas facilisis elit sed justo. Quisque volutpat malesuada velit."
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#6699FF"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="8dp"
+                        android:shadowColor="#909090"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="5.0"
+                        android:text="Applying Instructions"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/instructions"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:padding="10dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \n\nNam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa.
+
+\n\nInteger ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. \n\nIn dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+
+Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. \n\n\nCras ipsum. Vestibulum pretium, lectus nec venenatis volutpat, purus lectus ultrices risus, a condimentum risus mi et quam. Pellentesque auctor fringilla neque. Duis eu massa ut lorem iaculis vestibulum. Maecenas facilisis elit sed justo. Quisque volutpat malesuada velit."
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnViewJobsByCompany"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_selector"
+                    android:padding="12dp"
+                    android:text="View Jobs by this company"
+                    android:textColor="#fff" />
+            </LinearLayout>
+ <!-- end of container ll -->
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tapToSignUpLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#6699FF"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                android:clickable="false"
+                android:src="@drawable/ic_profile" />
+
+            <LinearLayout
+                android:id="@+id/profile_layout_logged_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/jobseeker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="Rabin Kaspal"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jobseeker_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="rabinkaspal@gmail.com"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_layout_logged_out"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="Guest"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="Tap to Sign Up or Login"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FF6600" />
+
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#303030"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/list_background" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

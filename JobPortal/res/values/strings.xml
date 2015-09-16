@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Job Finder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="skip_step"><u>SKIP THIS STEP</u></string>
+    <string name="is_employer"><u>I AM AN EMPLOYER</u></string>
+    <string name="loading">Loading more items &#8230;</string>
+    <string name="company_details"><u>View Company Detail</u></string>
+    <string name="spinner_title"><u>Select Functional Area</u></string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items when not logged in -->
+    <string-array name="jp_nav_drawer_items">
+        <item>Recent Jobs</item>
+        <item>Jobs by Category</item>
+        <item>Jobs by Company</item>
+        <item>Search Jobs</item>
+        <item>Employer</item>
+        <item>Rate App</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items when logged in -->
+    <string-array name="jp_nav_drawer_items_logged_in">
+        <item>Search Jobs</item>
+        <item>Profile</item>
+        <item>Responses</item>
+        <item>Recommended Jobs</item>
+        <item>Applied Jobs</item>
+        <item>Saved Jobs</item>
+        <item>Set Job Alert</item>
+         <item>Log Out</item>
+    </string-array>
+    
+     <array name="jp_nav_drawer_icons">
+        <item>@drawable/ic_recent_jobs</item>
+        <item>@drawable/ic_categories</item>
+        <item>@drawable/ic_company</item>
+        <item>@drawable/ic_search</item>
+        <item>@drawable/ic_employer</item>
+        <item>@drawable/ic_star</item>
+    </array>
+
+    <array name="jp_nav_drawer_icons_logged_in">
+        <item>@drawable/ic_search</item>
+        <item>@drawable/ic_user_profile</item>
+        <item>@drawable/ic_response</item>
+        <item>@drawable/ic_recent_jobs</item>
+        <item>@drawable/ic_label</item>
+        <item>@drawable/ic_save</item>
+        <item>@drawable/ic_alert</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+    
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>Semptember</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="course_graduation">
+        <item>12th &amp; Not Pursuing Graduation</item>
+        <item>B.Arch (Architecture)</item>
+        <item>B.Com (Commerce)</item>
+        <item>B.Ed (Education)</item>
+        <item>B.El.Ed (Elementary Education)</item>
+        <item>B.Lib.Sc (Library Sciences)</item>
+        <item>B.P.Ed (Physical Education)</item>
+        <item>B.Pharm (Pharmacy)</item>
+        <item>B.Plan (Planning)</item>
+        <item>B.Sc (Science)</item>
+        <item>B.V.Sc (Veterinary Science)</item>
+        <item>BA (Arts)</item>
+        <item>BBA/BBM/BBS</item>
+        <item>BCA (Computer Application)</item>
+        <item>BDS (Dental Surgery)</item>
+        <item>BE/ B.Tech (Engeneering)</item>
+        <item>BFA (Fine Arts)</item>
+        <item>BGL</item>
+        <item>BHM (Hotel Management)</item>
+        <item>BHMS (Homeopathy)</item>
+        <item>BL/LLB</item>
+        <item>BPT (Physiotherapy)</item>
+        <item>BSW (Social Work)</item>
+        <item>Bachelor of Fashion Technology</item>
+        <item>Diploma-Arts / Graphic Designing</item>
+        <item>Diploma-Engineering</item>
+        <item>Diploma-Fashion/Design</item>
+        <item>Diploma-Languages</item>
+        <item>Diploma-Fashion/Design</item>
+        <item>Diploma-Other Diploma</item>
+        <item>MBBS</item>
+        <item>Other School/Graduation</item>
+        <item>Pilot Liscences</item>
+    </string-array>
+    <string-array name="course_post_graduation">
+        <item>CA (Chartered Accountant)</item>
+        <item>CFA (Chartered Financial Analyst)</item>
+        <item>CS (Company Secretary)</item>
+        <item>ICWA</item>
+        <item>Integrated PG Course</item>
+        <item>M.Arch (Architecture)</item>
+        <item>M.Com (Commerce)</item>
+        <item>M.Ed (Education)</item>
+        <item>M.Lib.Sc (Library Sciences)</item>
+        <item>M.Pharm (Pharmacy)</item>
+        <item>M.Phil (Philosophy)</item>
+        <item>M.Plan (Planning)</item>
+        <item>M.Sc (Science)</item>
+        <item>M.V.Sc (Veterinary Science)</item>
+        <item>MA (Arts)</item>
+        <item>MBA/PGDM</item>
+        <item>MCA/PGDCA</item>
+        <item>MD/MS (Medicine)</item>
+        <item>ME/M.Tech/MS (Engg/ Sciences)</item>
+        <item>MFA (Fine Arts)</item>
+        <item>ML/LLM (Law)</item>
+        <item>MPT (Physiotherapy)</item>
+        <item>MSW (Social Work)</item>
+        <item>MDS (Dental Surgery)</item>
+        <item>Masters of Fashion Technology</item>
+        <item>Masters of Health Administration</item>
+        <item>Masters of Hospital Adminitration</item>
+        <item>Other Doctorate</item>
+        <item>Other Post Graduation</item>
+        <item>PG Diploma</item>
+        <item>Ph.D (Doctorate)</item>
+    </string-array>
+    <string-array name="year">
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+        <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+    </string-array>
+    
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>

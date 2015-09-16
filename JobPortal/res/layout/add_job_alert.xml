@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff0f0f0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff0f0f0"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <TextView
+                android:id="@+id/tvJobAlert"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Keywords: asdfasdfasfasdf \nasdf"
+                android:textColor="#336666"
+                android:textSize="16.0sp"
+                android:textStyle="normal" />
+            <View  android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#336600"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp"
+               />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Keywords: "
+                    android:textColor="#ff336666"
+                    android:textSize="16.0sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/etKeyWord"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="5.0"
+                    android:background="@drawable/txt_back"
+                    android:ems="10"
+                    android:hint="Key words..."
+                    android:paddingBottom="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:textColor="#ff585858" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Functional Area: "
+                    android:textColor="#ff336666"
+                    android:textSize="16.0sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/btnSelect"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.0"
+                    android:background="@drawable/btn_spinner"
+                    android:drawableRight="@drawable/chevron2"
+                    android:gravity="left|center"
+                    android:text="Select Functional Area"
+                    android:textColor="#ff808080" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Location: "
+                    android:textColor="#ff336666"
+                    android:textSize="16.0sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="5.0"
+                    android:background="@drawable/txt_back"
+                    android:ems="10"
+                    android:hint="preferred location"
+                    android:paddingBottom="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:textColor="#ff585858" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Salary Range"
+                android:textColor="#ff336666"
+                android:textSize="15.0sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(in Rs. per month)"
+                android:textColor="#ff336666"
+                android:textSize="12.0sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:orientation="horizontal"
+                    android:paddingTop="8.0dip" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1.0"
+                        android:gravity="left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Min: Rs."
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/salaryMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5000"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Max: Rs."
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/salaryMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100000"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/salaryRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:textColor="#ff336666"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Experience Range"
+                android:textColor="#ff336666"
+                android:textSize="15.0sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(years of working)"
+                android:textColor="#ff336666"
+                android:textSize="12.0sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8.0dip" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="8.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Min: "
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/expMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" years"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Max: "
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/expMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" years"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/expRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:textColor="#ff336666"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@+id/btnAddJobAlert"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/btn_apply_selector"
+                android:text="Add Job Alert"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="320.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tapToSignUpLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff6699ff"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="20.0dip" >
+
+            <ImageView
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_marginRight="20.0dip"
+                android:clickable="false"
+                android:src="@drawable/ic_profile" />
+
+            <LinearLayout
+                android:id="@+id/profile_layout_logged_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/jobseeker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#ff909090"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="3.0"
+                    android:text="Rabin Kaspal"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jobseeker_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#ff909090"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="3.0"
+                    android:text="rabinkaspal@gmail.com"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_layout_logged_out"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#ff909090"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="3.0"
+                    android:text="Guest"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#ff909090"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="3.0"
+                    android:text="Tap to Sign Up or Login"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:background="#ffff6600" />
+
+        <ListView
+            android:id="@id/list_slidermenu"
+            android:layout_width="240.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:background="#ff303030"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1.0dip"
+            android:listSelector="@color/list_background" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

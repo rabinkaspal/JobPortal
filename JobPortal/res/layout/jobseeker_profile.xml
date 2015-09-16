@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Framelayout to display Fragments -->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/abc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff0f0f0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvEditDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                android:text="EDIT"
+                android:textColor="#ff336600"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tvEditDetailsDiscard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISCARD"
+                android:textColor="#ff336600"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutJobSeekerDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    >
+
+                    <TextView
+                        android:id="@+id/js_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:text="Rabin Kaspal"
+                        android:textColor="#ff336666"
+                        android:textSize="22.0sp" />
+
+                    <TextView
+                        android:id="@+id/js_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:text="rabinkaspal@gmail.com"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/js_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15.0dip"
+                        android:text="Saatdobato, Lalitpur"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:text="Employment"
+                        android:textColor="#ff336699"
+                        android:textSize="16.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:background="#ff336699" />
+
+                    <TextView
+                        android:id="@+id/js_prev_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:text="Acharya Software Solutions"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/js_prev_company_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:text="Senior Programmer"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/js_prev_company_from"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:text="2011 April"
+                            android:textColor="#ff000000"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:text="to"
+                            android:textColor="#ff000000"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/js_prev_company_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:text="Present"
+                            android:textColor="#ff000000"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:text="Education"
+                        android:textColor="#ff336699"
+                        android:textSize="16.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:background="#ff336699" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dip"
+                        android:text="Graduation"
+                        android:textColor="#ff336666"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/js_course1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:text="B.E (Engineering/Tech)"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/js_institution1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:text="Kathford Engineering College"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    
+                     <LinearLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passed: "
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" /> 
+                        <TextView
+                        android:id="@+id/js_grad_passed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2014 May"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+                    </LinearLayout>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="Post Graduation"
+                        android:textColor="#ff336666"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/js_course2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:text="M.E (Engineering/Tech)"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/js_institution2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:text="Kathford Engineering College"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passed: "
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" /> 
+                        <TextView
+                        android:id="@+id/js_post_grad_passed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2014 May"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutEditDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtEmployment"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_apply_selector"
+                    android:gravity="center_horizontal"
+                    android:padding="10.0dip"
+                    android:shadowColor="#ff909090"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="5.0"
+                    android:text="Employement"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="#fff0f0f0" />
+
+                <TextView
+                    android:id="@+id/txtEducation"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_apply_selector"
+                    android:gravity="center"
+                    android:padding="10.0dip"
+                    android:shadowColor="#ff909090"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="5.0"
+                    android:text="Education"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/layoutEmploymentDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff0f0f0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#fff0f0f0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ff6699ff"
+                        android:paddingBottom="7.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingTop="7.0dip"
+                        android:shadowColor="#ff909090"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:shadowRadius="5.0"
+                        android:text="Employment Details"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#fff0f0f0"
+                        android:orientation="vertical"
+                        android:padding="10.0dip" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10.0dip"
+                            android:text="Add Current Employer"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:text="Company: "
+                                android:textColor="#ff336666"
+                                android:textSize="16.0sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/etCurrEmployerName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:background="@drawable/txt_back"
+                                android:ems="10"
+                                android:hint="Company name"
+                                android:paddingBottom="7.0dip"
+                                android:paddingTop="10.0dip"
+                                android:textColor="#ff585858" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:text="Designation: "
+                                android:textColor="#ff336666"
+                                android:textSize="16.0sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/etCurrCompanyPosition"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:background="@drawable/txt_back"
+                                android:ems="10"
+                                android:hint="your position"
+                                android:paddingBottom="7.0dip"
+                                android:paddingTop="10.0dip"
+                                android:textColor="#ff585858" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10.0dip"
+                            android:layout_marginTop="10.0dip"
+                            android:text="Time Period "
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:text="From: "
+                                android:textColor="#ff336666"
+                                android:textSize="16.0sp"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <Button
+                                    android:id="@+id/btnFromYearSelect"
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10.0dip"
+                                    android:layout_weight="1.0"
+                                    android:background="@drawable/btn_spinner"
+                                    android:drawableRight="@drawable/chevron2"
+                                    android:gravity="center"
+                                    android:paddingRight="20.0dip"
+                                    android:text="Select Year"
+                                    android:textColor="#ff808080" />
+
+                                <Button
+                                    android:id="@+id/btnFromMonthSelect"
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="@drawable/btn_spinner"
+                                    android:drawableRight="@drawable/chevron2"
+                                    android:gravity="center"
+                                    android:paddingRight="20.0dip"
+                                    android:text="Select Month"
+                                    android:textColor="#ff808080" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:text="To: "
+                                android:textColor="#ff336666"
+                                android:textSize="16.0sp"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <Button
+                                    android:id="@+id/btnToYearSelect"
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10.0dip"
+                                    android:layout_weight="1.0"
+                                    android:background="@drawable/btn_spinner"
+                                    android:enabled="false"
+                                    android:gravity="center"
+                                    android:text="Present"
+                                    android:textColor="#ff808080" />
+
+                                <Button
+                                    android:id="@+id/btnToMonthSelect"
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="@drawable/btn_spinner"
+                                    android:enabled="false"
+                                    android:gravity="center"
+                                    android:text="Present"
+                                    android:textColor="#ff808080" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnSaveEmployment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45.0dip"
+                            android:layout_gravity="bottom|right|center"
+                            android:background="@drawable/btn_back"
+                            android:paddingLeft="50.0dip"
+                            android:paddingRight="50.0dip"
+                            android:text="SAVE"
+                            android:textColor="#ffffffff"
+                            android:textSize="18.0sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/layoutEducationDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff0f0f0"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#fff0f0f0"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff0f0f0"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ff6699ff"
+                            android:paddingBottom="7.0dip"
+                            android:paddingLeft="10.0dip"
+                            android:paddingTop="7.0dip"
+                            android:shadowColor="#ff909090"
+                            android:shadowDx="2.0"
+                            android:shadowDy="2.0"
+                            android:shadowRadius="5.0"
+                            android:text="Educational Details"
+                            android:textColor="#ffffffff"
+                            android:textSize="18.0sp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutGraduation"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="#fff0f0f0"
+                            android:orientation="vertical"
+                            android:padding="10.0dip" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Graduation"
+                                android:textColor="#ff336666"
+                                android:textSize="16.0sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:layout_marginBottom="10.0dip"
+                                android:layout_marginTop="5.0dip"
+                                android:background="#ff6699ff" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:text="Course: "
+                                    android:textColor="#ff336666"
+                                    android:textSize="16.0sp"
+                                    android:textStyle="normal" />
+
+                                <Button
+                                    android:id="@+id/btnSelectCourse"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10.0dip"
+                                    android:background="@drawable/btn_spinner"
+                                    android:drawableRight="@drawable/chevron2"
+                                    android:gravity="left|center"
+                                    android:text="Select Course"
+                                    android:textColor="#ff808080" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:text="Year of Passing: "
+                                    android:textColor="#ff336666"
+                                    android:textSize="16.0sp"
+                                    android:textStyle="normal" />
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10.0dip"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <Button
+                                        android:id="@+id/btnFromYearSelect2"
+                                        style="?android:attr/buttonBarButtonStyle"
+                                        android:layout_width="0.0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10.0dip"
+                                        android:layout_weight="1.0"
+                                        android:background="@drawable/btn_spinner"
+                                        android:drawableRight="@drawable/chevron2"
+                                        android:gravity="center"
+                                        android:paddingRight="20.0dip"
+                                        android:text="Select Year"
+                                        android:textColor="#ff808080" />
+
+                                    <Button
+                                        android:id="@+id/btnFromMonthSelect2"
+                                        style="?android:attr/buttonBarButtonStyle"
+                                        android:layout_width="0.0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:background="@drawable/btn_spinner"
+                                        android:drawableRight="@drawable/chevron2"
+                                        android:gravity="center"
+                                        android:paddingRight="20.0dip"
+                                        android:text="Select Month"
+                                        android:textColor="#ff808080" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:text="Institution: "
+                                    android:textColor="#ff336666"
+                                    android:textSize="16.0sp"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etInstitutionBachelors"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:background="@drawable/txt_back"
+                                    android:ems="10"
+                                    android:hint="Name of institution"
+                                    android:paddingBottom="7.0dip"
+                                    android:paddingTop="10.0dip"
+                                    android:textColor="#ff585858" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtAddPostGraduation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:paddingLeft="15.0dip"
+                            android:text="+ Add Post Graduation"
+                            android:textColor="#ff336666"
+                            android:textSize="16.0sp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutPostGraduation"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="#fff0f0f0"
+                            android:orientation="vertical"
+                            android:padding="10.0dip" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Post Graduation"
+                                android:textColor="#ff336666"
+                                android:textSize="16.0sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:layout_marginBottom="10.0dip"
+                                android:layout_marginTop="5.0dip"
+                                android:background="#ff6699ff" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:text="Course: "
+                                    android:textColor="#ff336666"
+                                    android:textSize="16.0sp"
+                                    android:textStyle="normal" />
+
+                                <Button
+                                    android:id="@+id/btnSelectCourse2"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10.0dip"
+                                    android:background="@drawable/btn_spinner"
+                                    android:drawableRight="@drawable/chevron2"
+                                    android:gravity="left|center"
+                                    android:text="Select Course"
+                                    android:textColor="#ff808080" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:text="Year of Passing: "
+                                    android:textColor="#ff336666"
+                                    android:textSize="16.0sp"
+                                    android:textStyle="normal" />
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10.0dip"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <Button
+                                        android:id="@+id/btnFromYearSelect3"
+                                        style="?android:attr/buttonBarButtonStyle"
+                                        android:layout_width="0.0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10.0dip"
+                                        android:layout_weight="1.0"
+                                        android:background="@drawable/btn_spinner"
+                                        android:drawableRight="@drawable/chevron2"
+                                        android:gravity="center"
+                                        android:paddingRight="20.0dip"
+                                        android:text="Select Year"
+                                        android:textColor="#ff808080" />
+
+                                    <Button
+                                        android:id="@+id/btnFromMonthSelect3"
+                                        style="?android:attr/buttonBarButtonStyle"
+                                        android:layout_width="0.0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:background="@drawable/btn_spinner"
+                                        android:drawableRight="@drawable/chevron2"
+                                        android:gravity="center"
+                                        android:paddingRight="20.0dip"
+                                        android:text="Select Month"
+                                        android:textColor="#ff808080" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:text="Institution: "
+                                    android:textColor="#ff336666"
+                                    android:textSize="16.0sp"
+                                    android:textStyle="normal" />
+
+                                <EditText
+                                    android:id="@+id/etInstitutionMasters"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:background="@drawable/txt_back"
+                                    android:ems="10"
+                                    android:hint="name of institution"
+                                    android:paddingBottom="7.0dip"
+                                    android:paddingTop="10.0dip"
+                                    android:textColor="#ff585858" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txtRemovePostGraduation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5.0dip"
+                                android:paddingLeft="15.0dip"
+                                android:text="- Remove Post Graduation"
+                                android:textColor="#ff336666"
+                                android:textSize="16.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSaveEducation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45.0dip"
+                        android:layout_gravity="bottom|right|center"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/btn_back"
+                        android:paddingLeft="50.0dip"
+                        android:paddingRight="50.0dip"
+                        android:text="SAVE"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+ <!-- Listview to display slider menu -->
+
+   <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tapToSignUpLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#6699FF"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                android:clickable="false"
+                android:src="@drawable/ic_profile" />
+
+            <LinearLayout
+                android:id="@+id/profile_layout_logged_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/jobseeker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="Rabin Kaspal"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jobseeker_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="rabinkaspal@gmail.com"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_layout_logged_out"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="Guest"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:shadowColor="#909090"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3.0"
+                    android:text="Tap to Sign Up or Login"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FF6600" />
+
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#303030"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/list_background" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

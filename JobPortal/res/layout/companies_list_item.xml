@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="#F0F0F0">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:padding="10dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:src="@drawable/lorem"
+		android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="job category 1"
+        android:textSize="16sp"
+        android:paddingBottom="5dp"
+        android:textColor="#336666"
+        />
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Kupondole, Lalitpur"
+        android:textColor="#000"
+        />
+
+    </LinearLayout>
+     <ImageView
+        android:layout_gravity="center_vertical|right"
+        android:id="@+id/imageView1"
+        android:padding="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chevron1" />
+    
+
+</LinearLayout>

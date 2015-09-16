@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8.0dip"
+    android:background="#fff8f8f8"
+    android:gravity="left|center"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingTop="15.0dip"
+        android:text="Rabin Kaspal"
+        android:textColor="#ff336666"
+        android:textSize="18.0sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20.0dip" >
+
+        <EditText
+            android:id="@+id/jsUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:background="@drawable/txt_back"
+            android:ems="5"
+            android:hint="Username"
+            android:textColor="#ff6699ff" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/jsPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:background="@drawable/txt_back"
+            android:ems="5"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#ff6699ff" />
+
+        <CheckBox
+            android:id="@+id/togglePwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:text="Show Password"
+            android:textColor="#ff6699ff" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/btn_back"
+            android:text="SIGN IN"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20.0dip"
+            android:autoLink="web"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:text="@string/skip_step"
+            android:textColor="#ff6699ff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>
